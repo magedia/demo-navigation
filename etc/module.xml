@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author    Magedia Team
+ * @copyright Copyright (c) 2021 Magedia (https://www.magedia.com)
+ * @package   Magedia_DemoNavigation
+ * @version   1.0.0
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Magedia_DemoNavigation" setup_version="1.0.0">
+        <sequence>
+            <module name="Magedia_Demo"/>
+        </sequence>
+    </module>
+</config>

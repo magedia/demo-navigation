@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="global.notices">
+            <container name="demo" after="warning-block">
+                <block name="demo-navigation" template="Magedia_DemoNavigation::admin/nav_button.phtml"/>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
