@@ -3,7 +3,7 @@
     <body>
         <referenceContainer name="global.notices">
             <container name="demo" after="warning-block">
-                <block name="demo-navigation" template="Magedia_DemoNavigation::admin/nav_button.phtml"/>
+                <block class="Magento\Backend\Block\Menu" name="demo-navigation" template="Magedia_DemoNavigation::admin/demo_navigation.phtml"/>
             </container>
         </referenceContainer>
     </body>

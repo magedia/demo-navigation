@@ -1,0 +1,16 @@
+<div class="navigation_button_block">
+    <div class="navigation_menu_block" data-child="menu">
+        <h2>Backend</h2>
+        <ul class="demo_navmenu_item">
+            <?= /* @noEscape */ $block->renderNavigation($block->getMenuModel(), 0, 12) ?>
+        </ul>
+    </div>
+    <button id="navigation_btn" data-parent="menu" data-child="menu">Demo navigation</button>
+</div>
+<script type="text/x-magento-init">
+	{
+		"*":{
+			"Magedia_DemoNavigation/js/demo_navigation": true
+		}
+	}
+</script>

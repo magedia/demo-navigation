@@ -1,11 +1,44 @@
 .navigation_button_block{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
+    z-index: 1000;
 }
 
-.navigation_button_block button{
+#navigation_btn{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 23px;
+    min-width: 145px;
+    color: #fff;
     font-size: 12px;
-    height: 30px;
-    width: 130px;
+    border-radius: 50% 0 0 0;
+    background-color: #3087E0;
+    transform: rotate(-90deg) translateX(-35%) translateY(275%);
+
+    &.active{
+        right: 250px;
+        transition: 0.5s;
+    }
+}
+
+.navigation_menu_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #FFFFFF;
+
+    &.active{
+        margin-right: 0;
+        transition: 0.5s;
+    }
+}
+
+.demo_navmenu_item li{
+    list-style-type: none;
 }
