@@ -3,7 +3,7 @@
     <body>
         <referenceContainer name="global.notices">
             <container name="demo" after="warning-block">
-                <block class="Magedia\DemoNavigation\Block\RenderDemoNavigation" name="demo-navigation" template="Magedia_DemoNavigation::admin/demo_navigation.phtml"/>
+                <block class="Magedia\DemoNavigation\Block\RenderDemoNavigation" name="demo-navigation" template="Magedia_DemoNavigation::demo_navigation.phtml"/>
             </container>
         </referenceContainer>
     </body>
