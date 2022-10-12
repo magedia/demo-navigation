@@ -1,6 +1,8 @@
 <?php
 /** @var \Magedia\DemoNavigation\Block\RenderDemoNavigation $block */
 /** @var \Magento\Framework\Escaper $escaper */
+
+$marketplaceUrl = 'https://marketplace.magento.com/magedia-m2-pdf-invoice.html';
 ?>
 
 <div class="navigation_button_block">
@@ -37,8 +39,8 @@
             </div>
             <div class="more-info">
                 <p class="ready-to-purchase">Ready to purchase this extension?</p>
-                <a class="configure-and-buy action-primary" href="#">Configure and buy</a>
-                <a class="back-to-product-page" href="#">Back to product page</a>
+                <a class="configure-and-buy action-primary" href="<?= $escaper->escapeUrl($marketplaceUrl); ?>">Configure and buy</a>
+                <a class="back-to-product-page" href="<?= $escaper->escapeUrl($marketplaceUrl); ?>">Back to product page</a>
             </div>
         </div>
     </div>
