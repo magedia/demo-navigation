@@ -3,6 +3,12 @@
 /** @var \Magento\Framework\Escaper $escaper */
 
 $marketplaceUrl = 'https://marketplace.magento.com/magedia-m2-pdf-invoice.html';
+$guideLink = '';
+$ruleSettingsLink = '/magedia_acart/rule/index/';
+$mailJournalLink = '/magedia_acart/mailjournal/index/';
+$statisticLink = '/magedia_acart/statistic/index/';
+$stockLink = '/magedia_acart/stock/index/';
+$configLink = '/admin/system_config/edit/section/magedia_acart/';
 ?>
 
 <div class="navigation_button_block">
@@ -11,23 +17,38 @@ $marketplaceUrl = 'https://marketplace.magento.com/magedia-m2-pdf-invoice.html';
             <h2>Backend</h2>
             <div id="demo_navmenu_item">
                 <?php if($block->isFrontend()): ?>
-                    <li data-ui-id="menu-magedia-pdfinvoice-pdfinvoice-front" class="item-pdfinvoice  parent  level-1" role="menu-item">
+                    <li data-ui-id="menu-magedia-abandonedcart-acart-front" class="item-abandonedcart  parent  level-1" role="menu-item">
                         <strong class="submenu-group-title" role="presentation">
-                            <span>PDF Invoice</span>
+                            <span>Abandoned Cart</span>
                         </strong>
                         <div class="submenu">
                             <ul role="menu">
-                                <li data-ui-id="menu-magedia-pdfinvoice-pdfinvoice-manage" class="item-pdfinvoice-manage level-2" role="menu-item">
-                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) ?>" class="">
-                                        <span>Manage Templates</span>
+                                <li data-ui-id="menu-magedia-abandonedcart-acart-rule" class="item-abandonedcart-rule level-2" role="menu-item">
+                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) . $ruleSettingsLink ?>" class="">
+                                        <span>Rule Settings</span>
                                     </a>
                                 </li>
-                                <li data-ui-id="menu-magedia-pdfinvoice-pdfinvoice-configuration" class="item-pdfinvoice-configuration level-2" role="menu-item">
-                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) ?>" class="">
+                                <li data-ui-id="menu-magedia-abandonedcart-acart-mailjournal" class="item-abandonedcart-mailjournal level-2" role="menu-item">
+                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) . $mailJournalLink ?>" class="">
+                                        <span>Mail Journal</span>
+                                    </a>
+                                </li>
+                                <li data-ui-id="menu-magedia-abandonedcart-acart-statistic" class="item-abandonedcart-statistic level-2" role="menu-item">
+                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) . $statisticLink ?>" class="">
+                                        <span>Statistic</span>
+                                    </a>
+                                </li>
+                                <li data-ui-id="menu-magedia-abandonedcart-acart-stock" class="item-abandonedcart-stock level-2" role="menu-item">
+                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) . $stockLink ?>" class="">
+                                        <span>Stock</span>
+                                    </a>
+                                </li>
+                                <li data-ui-id="menu-magedia-abandonedcart-acart-configuration" class="item-abandonedcart-configuration level-2" role="menu-item">
+                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) . $configLink ?>" class="">
                                         <span>Configuration</span>
                                     </a>
                                 </li>
-                                <li data-ui-id="menu-magedia-pdfinvoice-pdfinvoice-userguide" class="item-pdfinvoice-userguide level-2" role="menu-item">
+                                <li data-ui-id="menu-magedia-abandonedcart-acart-userguide" class="item-abandonedcart-userguide level-2" role="menu-item">
                                     <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) ?>" target="_blank" class="">
                                         <span>User Guide</span>
                                     </a>
@@ -53,7 +74,7 @@ $marketplaceUrl = 'https://marketplace.magento.com/magedia-m2-pdf-invoice.html';
     </button>
 </div>
 <script>
-    let menu = document.querySelector("[data-ui-id='menu-magedia-pdfinvoice-pdfinvoice']").cloneNode(true);
+    let menu = document.querySelector("[data-ui-id='menu-magedia-abandonedcart-acart']").cloneNode(true);
     let place = document.getElementById('demo_navmenu_item');
     place.append(menu);
 </script>
