@@ -3,6 +3,9 @@
 /** @var \Magento\Framework\Escaper $escaper */
 
 $marketplaceUrl = 'https://marketplace.magento.com/magedia-m2-pdf-invoice.html';
+$guideLink = 'https://docs.magedia.com/user-guide/pdf-invoice/';
+$manageTemplatesLink = '/magedia_pdfinvoice/template/index/';
+$configLink = '/admin/system_config/edit/section/magedia_pdfinvoice/';
 ?>
 
 <div class="navigation_button_block">
@@ -18,17 +21,17 @@ $marketplaceUrl = 'https://marketplace.magento.com/magedia-m2-pdf-invoice.html';
                         <div class="submenu">
                             <ul role="menu">
                                 <li data-ui-id="menu-magedia-pdfinvoice-pdfinvoice-manage" class="item-pdfinvoice-manage level-2" role="menu-item">
-                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) ?>" class="">
+                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) . $manageTemplatesLink ?>" class="">
                                         <span>Manage Templates</span>
                                     </a>
                                 </li>
                                 <li data-ui-id="menu-magedia-pdfinvoice-pdfinvoice-configuration" class="item-pdfinvoice-configuration level-2" role="menu-item">
-                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) ?>" class="">
+                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) . $configLink?>" class="">
                                         <span>Configuration</span>
                                     </a>
                                 </li>
                                 <li data-ui-id="menu-magedia-pdfinvoice-pdfinvoice-userguide" class="item-pdfinvoice-userguide level-2" role="menu-item">
-                                    <a href="<?= $escaper->escapeUrl($block->getAdminUrl()) ?>" target="_blank" class="">
+                                    <a href="<?= $escaper->escapeUrl($guideLink) ?>" target="_blank" class="">
                                         <span>User Guide</span>
                                     </a>
                                 </li>
