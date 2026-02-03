@@ -53,9 +53,12 @@ $marketplaceUrl = 'https://marketplace.magento.com/magedia-m2-pdf-invoice.html';
     </button>
 </div>
 <script>
-    let menu = document.querySelector("[data-ui-id='menu-magedia-pdfinvoice-pdfinvoice']").cloneNode(true);
-    let place = document.getElementById('demo_navmenu_item');
-    place.append(menu);
+    let menuElement = document.querySelector("[data-ui-id='menu-magedia-pdfinvoice-pdfinvoice']");
+    if (menuElement) {
+        let menu = menuElement.cloneNode(true);
+        let place = document.getElementById('demo_navmenu_item');
+        place.append(menu);
+    }
 </script>
 <script type="text/x-magento-init">
 	{
